@@ -1,0 +1,6 @@
+[2025-04-27 18:47:27,806] 37 root _ INFO-Data exported to feature store at Artifacts\20250427184722\data_ingestion\feature_store\phisingData.csv
+[2025-04-27 18:47:27,879] 50 root _ INFO-Train and test data exported to Artifacts\20250427184722\data_ingestion\ingested\train.csv and Artifacts\20250427184722\data_ingestion\ingested\test.csv
+[2025-04-27 18:47:27,879] 24 root _ INFO-Data ingestion completed successfully.
+[2025-04-27 18:47:27,879] 25 root _ INFO-Train file path: Artifacts\20250427184722\data_ingestion\ingested\train.csv
+[2025-04-27 18:47:27,879] 26 root _ INFO-Test file path: Artifacts\20250427184722\data_ingestion\ingested\test.csv
+[2025-04-27 18:47:27,887] 72 root _ INFO-Data Validation started

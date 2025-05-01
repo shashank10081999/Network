@@ -1,0 +1,3 @@
+[2025-04-27 11:15:27,932] 36 root _ INFO-Data exported to feature store at Artifacts\20250427111524\data_ingestion\feature_store\phisingData.csv
+[2025-04-27 11:15:27,973] 49 root _ INFO-Train and test data exported to Artifacts\20250427111524\data_ingestion\Ingested\train.csv and Artifacts\20250427111524\data_ingestion\Ingested\test.csv
+[2025-04-27 11:15:27,973] 21 root _ INFO-Data ingestion completed successfully.

@@ -1,0 +1,93 @@
+Abnormal_URL:
+  pvalue: 1.0
+  same_distribution: false
+DNSRecord:
+  pvalue: 1.0
+  same_distribution: false
+Domain_registeration_length:
+  pvalue: 0.9958579353974752
+  same_distribution: false
+Favicon:
+  pvalue: 1.0
+  same_distribution: false
+Google_Index:
+  pvalue: 0.9999953843756324
+  same_distribution: false
+HTTPS_token:
+  pvalue: 1.0
+  same_distribution: false
+Iframe:
+  pvalue: 1.0
+  same_distribution: false
+Links_in_tags:
+  pvalue: 0.9995152509457711
+  same_distribution: false
+Links_pointing_to_page:
+  pvalue: 0.9996208033369954
+  same_distribution: false
+Page_Rank:
+  pvalue: 0.9876237011526984
+  same_distribution: false
+Prefix_Suffix:
+  pvalue: 0.9995152509457711
+  same_distribution: false
+Redirect:
+  pvalue: 1.0
+  same_distribution: false
+Request_URL:
+  pvalue: 0.2689286131324479
+  same_distribution: false
+Result:
+  pvalue: 0.9086653866244705
+  same_distribution: false
+RightClick:
+  pvalue: 1.0
+  same_distribution: false
+SFH:
+  pvalue: 1.0
+  same_distribution: false
+SSLfinal_State:
+  pvalue: 0.45991477918984003
+  same_distribution: false
+Shortining_Service:
+  pvalue: 1.0
+  same_distribution: false
+Statistical_report:
+  pvalue: 1.0
+  same_distribution: false
+Submitting_to_email:
+  pvalue: 0.9999953843756324
+  same_distribution: false
+URL_Length:
+  pvalue: 0.9999971010402764
+  same_distribution: false
+URL_of_Anchor:
+  pvalue: 0.9997752665277037
+  same_distribution: false
+age_of_domain:
+  pvalue: 0.9914952304622426
+  same_distribution: false
+double_slash_redirecting:
+  pvalue: 0.9999999998789996
+  same_distribution: false
+having_At_Symbol:
+  pvalue: 1.0
+  same_distribution: false
+having_IP_Address:
+  pvalue: 1.0
+  same_distribution: false
+having_Sub_Domain:
+  pvalue: 0.9999999999598222
+  same_distribution: false
+on_mouseover:
+  pvalue: 0.9999999999598222
+  same_distribution: false
+popUpWidnow:
+  pvalue: 0.9999999991050752
+  same_distribution: false
+port:
+  pvalue: 1.0
+  same_distribution: false
+web_traffic:
+  pvalue: 0.5733052694150307
+  same_distribution: false

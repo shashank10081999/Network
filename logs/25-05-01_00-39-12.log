@@ -1,0 +1,12 @@
+[2025-05-01 00:39:17,624] 37 root _ INFO-Data exported to feature store at Artifacts\20250501003914\data_ingestion\feature_store\phisingData.csv
+[2025-05-01 00:39:17,664] 50 root _ INFO-Train and test data exported to Artifacts\20250501003914\data_ingestion\ingested\train.csv and Artifacts\20250501003914\data_ingestion\ingested\test.csv
+[2025-05-01 00:39:17,665] 26 root _ INFO-Data ingestion completed successfully.
+[2025-05-01 00:39:17,665] 27 root _ INFO-Train file path: Artifacts\20250501003914\data_ingestion\ingested\train.csv
+[2025-05-01 00:39:17,665] 28 root _ INFO-Test file path: Artifacts\20250501003914\data_ingestion\ingested\test.csv
+[2025-05-01 00:39:17,670] 71 root _ INFO-Data Validation started
+[2025-05-01 00:39:17,850] 34 root _ INFO-Data validation completed successfully.
+[2025-05-01 00:39:17,910] 70 root _ INFO-Data transformation completed successfully.
+[2025-05-01 00:39:17,910] 40 root _ INFO-Data transformation completed successfully.
+[2025-05-01 00:40:21,379] 98 root _ INFO-Tracking MLflow metrics for the best model.
+[2025-05-01 00:40:21,395] 111 root _ INFO-Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts\\20250501003914\\model_trainer\\trained_model\\model.pkl', trained_metric_artifact=ClassificationArtifact(f1_score=0.9906130888125816, precision=0.9906184836514197, recall=0.9906151062867481), test_metric_artifact=ClassificationArtifact(f1_score=0.9669415962684128, precision=0.9670459232300885, recall=0.9669832654907282))
+[2025-05-01 00:40:21,395] 45 root _ INFO-Model trainer artifact: None
