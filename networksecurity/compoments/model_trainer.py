@@ -22,8 +22,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import (RandomForestClassifier , GradientBoostingClassifier, AdaBoostClassifier)
 from networksecurity.utils.ml_utils.model.estimator import evaluate_model
-import dagshub
-dagshub.init(repo_owner=os.getenv("REPO_OWNER"), repo_name=os.getenv("REPO_NAME"), mlflow=True)
+
 
 
 class ModelTrainer():
