@@ -1,0 +1,21 @@
+[2025-05-03 23:13:47,085] 1025 httpx _ INFO-HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-05-03 23:13:47,099] 107 dagshub _ INFO-Accessing as shashank10081999
+[2025-05-03 23:13:47,227] 1025 httpx _ INFO-HTTP Request: GET https://dagshub.com/api/v1/repos/shashank10081999/Network_Security_Repo "HTTP/1.1 200 OK"
+[2025-05-03 23:13:47,330] 1025 httpx _ INFO-HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-05-03 23:13:47,333] 107 dagshub _ INFO-Initialized MLflow to track repo "shashank10081999/Network_Security_Repo"
+[2025-05-03 23:13:47,334] 107 dagshub _ INFO-Repository shashank10081999/Network_Security_Repo initialized!
+[2025-05-03 23:13:52,404] 37 root _ INFO-Data exported to feature store at Artifacts\20250503231347\data_ingestion\feature_store\phisingData.csv
+[2025-05-03 23:13:52,472] 50 root _ INFO-Train and test data exported to Artifacts\20250503231347\data_ingestion\ingested\train.csv and Artifacts\20250503231347\data_ingestion\ingested\test.csv
+[2025-05-03 23:13:52,473] 27 root _ INFO-Data ingestion completed successfully.
+[2025-05-03 23:13:52,473] 28 root _ INFO-Train file path: Artifacts\20250503231347\data_ingestion\ingested\train.csv
+[2025-05-03 23:13:52,473] 29 root _ INFO-Test file path: Artifacts\20250503231347\data_ingestion\ingested\test.csv
+[2025-05-03 23:13:52,482] 71 root _ INFO-Data Validation started
+[2025-05-03 23:13:52,741] 35 root _ INFO-Data validation completed successfully.
+[2025-05-03 23:13:52,847] 70 root _ INFO-Data transformation completed successfully.
+[2025-05-03 23:13:52,848] 41 root _ INFO-Data transformation completed successfully.
+[2025-05-03 23:16:32,749] 101 root _ INFO-Tracking MLflow metrics for the best model.
+[2025-05-03 23:16:32,861] 119 root _ INFO-Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts\\20250503231347\\model_trainer\\trained_model\\model.pkl', trained_metric_artifact=ClassificationArtifact(f1_score=0.9906130888125816, precision=0.9906184836514197, recall=0.9906151062867481), test_metric_artifact=ClassificationArtifact(f1_score=0.9664863725061861, precision=0.9666034969810211, recall=0.9665309814563546), best_model_file_path='final_model\\model.pkl')
+[2025-05-03 23:16:32,865] 47 root _ INFO-Model training completed successfully.
+[2025-05-03 23:16:32,904] 1352 botocore.credentials _ INFO-Found credentials in shared credentials file: ~/.aws/credentials
+[2025-05-03 23:16:34,739] 29 root _ INFO-Successfully synced final_model to S3 bucket networksecuritybucket-shashank.
+[2025-05-03 23:16:38,321] 29 root _ INFO-Successfully synced Artifacts\20250503231347 to S3 bucket networksecuritybucket-shashank.

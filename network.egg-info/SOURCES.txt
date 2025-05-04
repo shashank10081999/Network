@@ -6,6 +6,7 @@ network.egg-info/dependency_links.txt
 network.egg-info/top_level.txt
 networksecurity/__init__.py
 networksecurity/cloud/__init__.py
+networksecurity/cloud/aws.py
 networksecurity/compoments/__init__.py
 networksecurity/compoments/data_ingestion.py
 networksecurity/compoments/data_transformation.py

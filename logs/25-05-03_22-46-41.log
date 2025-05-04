@@ -1,0 +1,18 @@
+[2025-05-03 22:47:06,376] 1025 httpx _ INFO-HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-05-03 22:47:06,403] 107 dagshub _ INFO-Accessing as shashank10081999
+[2025-05-03 22:47:06,543] 1025 httpx _ INFO-HTTP Request: GET https://dagshub.com/api/v1/repos/shashank10081999/Network_Security_Repo "HTTP/1.1 200 OK"
+[2025-05-03 22:47:06,674] 1025 httpx _ INFO-HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-05-03 22:47:06,679] 107 dagshub _ INFO-Initialized MLflow to track repo "shashank10081999/Network_Security_Repo"
+[2025-05-03 22:47:06,681] 107 dagshub _ INFO-Repository shashank10081999/Network_Security_Repo initialized!
+[2025-05-03 22:47:10,667] 37 root _ INFO-Data exported to feature store at Artifacts\20250503224706\data_ingestion\feature_store\phisingData.csv
+[2025-05-03 22:47:10,800] 50 root _ INFO-Train and test data exported to Artifacts\20250503224706\data_ingestion\ingested\train.csv and Artifacts\20250503224706\data_ingestion\ingested\test.csv
+[2025-05-03 22:47:10,803] 27 root _ INFO-Data ingestion completed successfully.
+[2025-05-03 22:47:10,803] 28 root _ INFO-Train file path: Artifacts\20250503224706\data_ingestion\ingested\train.csv
+[2025-05-03 22:47:10,803] 29 root _ INFO-Test file path: Artifacts\20250503224706\data_ingestion\ingested\test.csv
+[2025-05-03 22:47:10,821] 71 root _ INFO-Data Validation started
+[2025-05-03 22:47:11,250] 35 root _ INFO-Data validation completed successfully.
+[2025-05-03 22:47:11,390] 70 root _ INFO-Data transformation completed successfully.
+[2025-05-03 22:47:11,394] 41 root _ INFO-Data transformation completed successfully.
+[2025-05-03 22:49:37,251] 101 root _ INFO-Tracking MLflow metrics for the best model.
+[2025-05-03 22:49:37,296] 119 root _ INFO-Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts\\20250503224706\\model_trainer\\trained_model\\model.pkl', trained_metric_artifact=ClassificationArtifact(f1_score=0.9906118684434524, precision=0.9906273377093454, recall=0.9906151062867481), test_metric_artifact=ClassificationArtifact(f1_score=0.9664718513379715, precision=0.9666865058437076, recall=0.9665309814563546), best_model_file_path='final_model\\model.pkl')
+[2025-05-03 22:49:37,298] 47 root _ INFO-Model training completed successfully.

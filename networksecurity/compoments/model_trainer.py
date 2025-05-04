@@ -22,6 +22,9 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import (RandomForestClassifier , GradientBoostingClassifier, AdaBoostClassifier)
 from networksecurity.utils.ml_utils.model.estimator import evaluate_model
+import dagshub
+dagshub.init(repo_owner=os.getenv("REPO_OWNER"), repo_name=os.getenv("REPO_NAME"), mlflow=True)
+
 
 class ModelTrainer():
     def __init__(self, model_trainer_config: ModelTrainerConfig, data_transformation_artifact: DataTransformationArtifact):
@@ -102,10 +105,16 @@ class ModelTrainer():
 
             save_object(file_path=self.model_trainer_config.trained_model_file_path, obj=model)
 
+            os.makedirs("final_model", exist_ok=True)
+            best_model_file_path = os.path.join("final_model", "model.pkl")
+            save_object(file_path=best_model_file_path, obj=best_model)
+            save_object(file_path=os.path.join("final_model", "preprocessor.pkl"), obj=preprocessor)
+
             model_trainer_artifact = ModelTrainerArtifact(
                 trained_model_file_path=self.model_trainer_config.trained_model_file_path,
                 trained_metric_artifact=classification_train_metric,
-                test_metric_artifact=classification_test_metric
+                test_metric_artifact=classification_test_metric,
+                best_model_file_path=best_model_file_path
             )
 
             logging.info(f"Model trainer artifact: {model_trainer_artifact}")
@@ -132,8 +141,8 @@ class ModelTrainer():
                 test_arr[:, -1]
             )
 
-            self.model_train(x_train=x_train, y_train=y_train, x_test=x_test, y_test=y_test)
-
+            model_trainer_artifact = self.model_train(x_train=x_train, y_train=y_train, x_test=x_test, y_test=y_test)
+            return model_trainer_artifact
 
 
         except Exception as e:

@@ -1,0 +1,20 @@
+[2025-05-01 00:57:01,445] 1025 httpx _ INFO-HTTP Request: POST https://dagshub.com/login/oauth/middleman "HTTP/1.1 200 OK"
+[2025-05-01 00:57:01,538] 1025 httpx _ INFO-HTTP Request: POST https://dagshub.com/login/oauth/access_token "HTTP/1.1 200 OK"
+[2025-05-01 00:57:01,617] 1025 httpx _ INFO-HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-05-01 00:57:01,621] 107 dagshub _ INFO-Accessing as shashank10081999
+[2025-05-01 00:57:01,732] 1025 httpx _ INFO-HTTP Request: GET https://dagshub.com/api/v1/repos/shashank10081999/Network_Security_Repo "HTTP/1.1 200 OK"
+[2025-05-01 00:57:01,825] 1025 httpx _ INFO-HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-05-01 00:57:01,828] 107 dagshub _ INFO-Initialized MLflow to track repo "shashank10081999/Network_Security_Repo"
+[2025-05-01 00:57:01,828] 107 dagshub _ INFO-Repository shashank10081999/Network_Security_Repo initialized!
+[2025-05-01 00:57:04,601] 37 root _ INFO-Data exported to feature store at Artifacts\20250501005701\data_ingestion\feature_store\phisingData.csv
+[2025-05-01 00:57:04,667] 50 root _ INFO-Train and test data exported to Artifacts\20250501005701\data_ingestion\ingested\train.csv and Artifacts\20250501005701\data_ingestion\ingested\test.csv
+[2025-05-01 00:57:04,667] 26 root _ INFO-Data ingestion completed successfully.
+[2025-05-01 00:57:04,667] 27 root _ INFO-Train file path: Artifacts\20250501005701\data_ingestion\ingested\train.csv
+[2025-05-01 00:57:04,667] 28 root _ INFO-Test file path: Artifacts\20250501005701\data_ingestion\ingested\test.csv
+[2025-05-01 00:57:04,675] 71 root _ INFO-Data Validation started
+[2025-05-01 00:57:04,887] 34 root _ INFO-Data validation completed successfully.
+[2025-05-01 00:57:04,960] 70 root _ INFO-Data transformation completed successfully.
+[2025-05-01 00:57:04,962] 40 root _ INFO-Data transformation completed successfully.
+[2025-05-01 00:58:01,774] 101 root _ INFO-Tracking MLflow metrics for the best model.
+[2025-05-01 00:58:01,788] 114 root _ INFO-Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts\\20250501005701\\model_trainer\\trained_model\\model.pkl', trained_metric_artifact=ClassificationArtifact(f1_score=0.9906118684434524, precision=0.9906273377093454, recall=0.9906151062867481), test_metric_artifact=ClassificationArtifact(f1_score=0.9664863725061861, precision=0.9666034969810211, recall=0.9665309814563546))
+[2025-05-01 00:58:01,790] 45 root _ INFO-Model trainer artifact: None

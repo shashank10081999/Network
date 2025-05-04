@@ -31,3 +31,4 @@ class ModelTrainerArtifact:
     trained_model_file_path: str
     trained_metric_artifact: ClassificationArtifact
     test_metric_artifact: ClassificationArtifact
+    best_model_file_path: str

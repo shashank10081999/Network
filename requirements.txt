@@ -10,3 +10,7 @@ dill
 pyaml
 mlflow
 dagshub
+boto3
+fastapi
+uvicorn
+python-multipart
