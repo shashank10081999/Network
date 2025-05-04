@@ -86,6 +86,8 @@ jobs:
                 echo "Docker image pulled from ECR: $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
 
             - name: Run Docker Image to Serve users
+              env:
+                ECR_REGISTRY: ${{ steps.ecr-registry.outputs.registry }}
               run: |
                 docker run -d -p 8080:8080 --ipc="host" --name=Network -e 'AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }}' -e 'AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }}' -e 'AWS_REGION=us-west-1' $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
                 echo "Docker image is running on port 8080"
